@@ -2062,7 +2062,7 @@ pre .javascript .function {
     top: 0;
     right: 0;
     height: 100%;
-    background: rgba(0,0,0,0.17);
+    background: rgba(0,0,0,0.8);
     color: #fff;
     cursor: default;
     z-index: 1;
