@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.stardongy.xyz/"/>
-  <updated>2018-12-07T03:39:18.303Z</updated>
+  <updated>2019-01-10T10:23:25.016Z</updated>
   <id>https://www.stardongy.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.stardongy.xyz/2018/12/04/Mysql%20%E8%BF%9E%E6%8E%A5%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>https://www.stardongy.xyz/2018/12/04/Mysql 连接的使用/</id>
     <published>2018-12-04T08:51:23.000Z</published>
-    <updated>2018-12-07T03:39:18.303Z</updated>
+    <updated>2019-01-10T10:23:25.016Z</updated>
     
     <content type="html"><![CDATA[<p>因为刚刚看完这里几天，结果被大笨蛋一问就懵逼了，所以。。。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1544163924313&amp;di=24478b841cfe1feb804affa81e9e085a&amp;imgtype=0&amp;src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171121%2F0e97da0bf9df4cb78b548549532a03a9.gif" alt="猥琐一笑"></p><p>JOIN 按照功能大致分为如下三类：</p><p>INNER JOIN（内连接,或等值连接）：获取两个表中字段匹配关系的记录。</p><p>LEFT JOIN（左连接）：获取左表所有记录，即使右表没有对应匹配的记录。</p><p>RIGHT JOIN（右连接）： 与 LEFT JOIN 相反，用于获取右表所有记录，即使左表没有对应匹配的记录。</p><p>更多: <a href="http://note.youdao.com/noteshare?id=00a931d7817006d5aef7ff88f8747e6f&amp;sub=6937E7B04D8C48FFA3E7D927525A9F87" target="_blank" rel="noopener">我的笔记</a></p>]]></content>
     
