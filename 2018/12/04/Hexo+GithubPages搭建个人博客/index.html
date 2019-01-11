@@ -17,7 +17,9 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://upload-tdy-images.oss-us-west-1.aliyuncs.com/blog-pic/blog_docs_pictures/setting.png">
 <meta property="og:image" content="http://upload-tdy-images.oss-us-west-1.aliyuncs.com/blog-pic/blog_docs_pictures/setting.png">
-<meta property="og:updated_time" content="2019-01-11T07:29:00.391Z">
+<meta property="og:image" content="http://upload-tdy-images.oss-us-west-1.aliyuncs.com/blog-pic/blog_docs_pictures/7v0%7Ecc%24f3ro5.png">
+<meta property="og:image" content="http://upload-tdy-images.oss-us-west-1.aliyuncs.com/blog-pic/blog_docs_pictures/90lj%7Dh13ll5o.png">
+<meta property="og:updated_time" content="2019-01-11T09:29:08.074Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+GithubPages搭建个人博客">
 <meta name="twitter:description" content="Github：只是建立了一个github.io的库，没有账号的话可以注册一个。 Hexo：下载了它的安装包和主题，关于它部署博客的命令不用刻意记住，因为文档里都有，知道常用的命令就可以。 GithubPages：GitHub Pages是用来托管 GitHub 上静态网页的免费站点。只要你建立了github.io库，就默认在使用，它相当于一个服务器，可以保存你的所有博客文件。  利用Hexo和G">
@@ -149,7 +151,7 @@
 <h2 id="start"><a href="#start" class="headerlink" title="start"></a>start</h2><h3 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h3><p>1.获得个人网站域名，GitHub创建个人仓库<br>2.安装Git，安装Node.js，安装Hexo, Hexo常用命令<br>3.推送网站<br>4.绑定域名<br>5.更换主题<br>7.目录的创建<br>8.创作与发布文章(简单了解<a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">MarkDown语法</a>)<br>9.寻找图床<br>10.个性化设置<br>11.推送到百度</p>
 <h3 id="1-获得个人网站域名，GitHub创建个人仓库"><a href="#1-获得个人网站域名，GitHub创建个人仓库" class="headerlink" title="1.获得个人网站域名，GitHub创建个人仓库"></a>1.获得个人网站域名，GitHub创建个人仓库</h3><p>a.个人网站域名(去腾讯或阿里购买)<br>b.GitHub创建个人仓库<br>个人仓库 <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/" target="_blank" rel="noopener">命名方式</a><br>创建一个repo，名称为yourname.github.io, 其中yourname是你的github名称，按照这个规则创建才能直接使用<a href="https://yourname.github.io；" target="_blank" rel="noopener">https://yourname.github.io；</a><br>之后这个Setting中:</p>
 <p><img src="https://upload-tdy-images.oss-us-west-1.aliyuncs.com/blog-pic/blog_docs_pictures/setting.png" alt="Setting"><br>设置:Source设置为master，Custom domain设置为’你的域名’。<br>更多: <a href="https://github.com/tdyyyy/tdyyyy.github.io/settings" target="_blank" rel="noopener">我的GitHub</a></p>
-<h3 id="2-安装Git，安装Node-js，安装Hexo"><a href="#2-安装Git，安装Node-js，安装Hexo" class="headerlink" title="2.安装Git，安装Node.js，安装Hexo"></a>2.安装Git，安装Node.js，安装Hexo</h3><h5 id="a-什么是Hexo"><a href="#a-什么是Hexo" class="headerlink" title="a.什么是Hexo?"></a>a.什么是Hexo?</h5><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br><a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">Github地址</a>,<a href="https://hexo.io/docs/" target="_blank" rel="noopener">Hexo文档</a></p>
+<h3 id="2-安装Git，安装Node-js，安装Hexo，常用命令"><a href="#2-安装Git，安装Node-js，安装Hexo，常用命令" class="headerlink" title="2.安装Git，安装Node.js，安装Hexo，常用命令"></a>2.安装Git，安装Node.js，安装Hexo，常用命令</h3><h5 id="a-什么是Hexo"><a href="#a-什么是Hexo" class="headerlink" title="a.什么是Hexo?"></a>a.什么是Hexo?</h5><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br><a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">Github地址</a>,<a href="https://hexo.io/docs/" target="_blank" rel="noopener">Hexo文档</a></p>
 <h6 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h6><ul>
 <li>极速生成静态页面</li>
 <li>一键部署博客</li>
@@ -200,15 +202,20 @@
 <td>hexo s (hexo server)</td>
 <td style="text-align:left">启动服务预览</td>
 </tr>
+<tr>
+<td>hexo d(hexo deploy)</td>
+<td style="text-align:left">远程部署</td>
+</tr>
 </tbody>
 </table>
-<p>hexo d(hexo deploy)远程部署</p>
 <p>hexo server #Hexo会监视文件变动并自动更新，无须重启服务器<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP<br>hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令</p>
+<h3 id="3-推送网站"><a href="#3-推送网站" class="headerlink" title="3.推送网站"></a>3.推送网站</h3><p>接下来要做的就是就是推送网站，也就是发布网站，让我们的网站可以被更多的人访问。在设置之前，需要解释一个概念，在blog根目录里的_config.yml文件称为站点配置文件，如下图：<br><img src="http://upload-tdy-images.oss-us-west-1.aliyuncs.com/blog-pic/blog_docs_pictures/7v0%7Ecc%24f3ro5.png" alt="根目录"><br>进入根目录里的themes文件夹，里面也有个_config.yml文件，这个称为主题配置文件：<br><img src="http://upload-tdy-images.oss-us-west-1.aliyuncs.com/blog-pic/blog_docs_pictures/90lj%7Dh13ll5o.png" alt="主题配置文件"><br>下一步将我们的Hexo与GitHub关联起来，打开站点的配置文件_config.yml，翻到最后修改为：<br>deploy:<br>type: git<br>repo: 这里填入你之前在GitHub上创建仓库的完整路径，记得加上 .git<br>branch: master</p>
+<p>未完待续。。。</p>
 <p>参考:<br>      <a href="https://www.jianshu.com/p/0a86c719a489" target="_blank" rel="noopener">https://www.jianshu.com/p/0a86c719a489</a><br>      <a href="https://zhuanlan.zhihu.com/p/26625249?utm_source=qq" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/26625249?utm_source=qq</a><br>      <a href="https://www.cnblogs.com/visugar/p/6821777.html" target="_blank" rel="noopener">https://www.cnblogs.com/visugar/p/6821777.html</a><br>      <a href="https://geeksblog.cc/hexo-theme.html" target="_blank" rel="noopener">https://geeksblog.cc/hexo-theme.html</a></p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2019年01月11日 15:29</p>
+        <p>最后更新： 2019年01月11日 17:29</p>
         <p>原始链接： <a class="post-url" href="/2018/12/04/Hexo+GithubPages搭建个人博客/" title="Hexo+GithubPages搭建个人博客">https://www.stardongy.xyz/2018/12/04/Hexo+GithubPages搭建个人博客/</a></p>
         <footer>
             <a href="https://www.stardongy.xyz">
@@ -319,7 +326,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#start"><span class="post-toc-text">start</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#搭建步骤"><span class="post-toc-text">搭建步骤</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-获得个人网站域名，GitHub创建个人仓库"><span class="post-toc-text">1.获得个人网站域名，GitHub创建个人仓库</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-安装Git，安装Node-js，安装Hexo"><span class="post-toc-text">2.安装Git，安装Node.js，安装Hexo</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#a-什么是Hexo"><span class="post-toc-text">a.什么是Hexo?</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#优点："><span class="post-toc-text">优点：</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#b-安装Hexo前提"><span class="post-toc-text">b.安装Hexo前提:</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#c-环境搭建好，可以安装Hexo了"><span class="post-toc-text">c.环境搭建好，可以安装Hexo了</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#d-测试网站"><span class="post-toc-text">d.测试网站</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#e-测试网站"><span class="post-toc-text">e.测试网站</span></a></li></ol></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#start"><span class="post-toc-text">start</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#搭建步骤"><span class="post-toc-text">搭建步骤</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-获得个人网站域名，GitHub创建个人仓库"><span class="post-toc-text">1.获得个人网站域名，GitHub创建个人仓库</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-安装Git，安装Node-js，安装Hexo，常用命令"><span class="post-toc-text">2.安装Git，安装Node.js，安装Hexo，常用命令</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#a-什么是Hexo"><span class="post-toc-text">a.什么是Hexo?</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#优点："><span class="post-toc-text">优点：</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#b-安装Hexo前提"><span class="post-toc-text">b.安装Hexo前提:</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#c-环境搭建好，可以安装Hexo了"><span class="post-toc-text">c.环境搭建好，可以安装Hexo了</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#d-测试网站"><span class="post-toc-text">d.测试网站</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#e-测试网站"><span class="post-toc-text">e.测试网站</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-推送网站"><span class="post-toc-text">3.推送网站</span></a></li></ol>
         </nav>
     </aside>
     
