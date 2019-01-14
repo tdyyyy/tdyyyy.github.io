@@ -997,6 +997,12 @@ body {
 .article-entry a:hover {
   text-decoration: underline;
 }
+.article-entry .h3a {
+  color: #333;
+}
+.article-entry .h3a:hover {
+  text-decoration: none;
+}
 .article-entry ol,
 .article-entry dl {
   margin-top: 0.8em;
