@@ -1460,6 +1460,7 @@ body {
   margin: 0 auto;
 }
 .post-toc-pos {
+  display: none;
   z-index: 999;
   bottom: 77%;
   left: calc(50% - 660px);
@@ -1474,7 +1475,7 @@ body {
   -webkit-transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
-  opacity: 0;
+  opacity: 1;
 }
 .post-toc-top {
   -webkit-transition: opacity 0.5s ease-in-out;
