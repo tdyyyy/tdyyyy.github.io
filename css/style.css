@@ -1474,7 +1474,7 @@ body {
   -webkit-transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
-  opacity: 1;
+  opacity: 0;
 }
 .post-toc-top {
   -webkit-transition: opacity 0.5s ease-in-out;
