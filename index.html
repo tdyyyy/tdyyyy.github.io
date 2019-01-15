@@ -370,8 +370,51 @@ GithubPages：GitHub Pages是用来托管 GitHub 上静态网页的免费站点�
 
 
   </div>
-  <canvas id="live2dcanvas" width="300" height="600" class="live2d"></canvas>
-  <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":true,"debug":false,"mobile":{"show":false},"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-miku@1.0.5/assets/miku.model.json"},"log":false});</script>
+  <!--<canvas id="live2dcanvas" width="300" height="600" class="live2d"></canvas>-->
+  <!--<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":true,"debug":false,"mobile":{"show":false},"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-miku@1.0.5/assets/miku.model.json"},"log":false});</script>-->
+
+  <div class="waifu">
+      <div class="waifu-tips"></div>
+      <canvas id="live2d" class="live2d"></canvas>
+      <div class="waifu-tool">
+          <span class="fui-home"></span>
+          <span class="fui-chat"></span>
+          <span class="fui-eye"></span>
+          <span class="fui-user"></span>
+          <span class="fui-photo"></span>
+          <span class="fui-info-circle"></span>
+          <span class="fui-cross"></span>
+      </div>
+  </div>
+  <!-- waifu-tips.js 依赖 JQuery 库 -->
+  <script src="http://upload-tdy-images.oss-us-west-1.aliyuncs.com/demo-doc/jquery.min.js"></script>
+
+  <!-- 实现拖动效果，需引入 JQuery UI -->
+  <script src="http://upload-tdy-images.oss-us-west-1.aliyuncs.com/demo-doc/jquery-ui.min.js"></script>
+
+  <script src="http://upload-tdy-images.oss-us-west-1.aliyuncs.com/demo-doc/waifu-tips.js"></script>
+  <script src="http://upload-tdy-images.oss-us-west-1.aliyuncs.com/demo-doc/live2d.min.js"></script>
+
+  <script type="text/javascript">
+      live2d_settings['hitokotoAPI'] = 'jinrishici.com'; // 一言 API
+      live2d_settings['modelId'] = 2;                    // 默认模型 ID
+      live2d_settings['modelTexturesId'] = 6;            // 默认材质 ID
+      live2d_settings['modelStorage'] = false;           // 不储存模型 ID
+      live2d_settings['canCloseLive2d'] = false;         // 隐藏 关闭看板娘 按钮
+      live2d_settings['canTurnToHomePage'] = false;      // 隐藏 返回首页 按钮
+      live2d_settings['waifuSize'] = '600x535';          // 看板娘大小
+      live2d_settings['waifuTipsSize'] = '570x150';      // 提示框大小
+      live2d_settings['waifuFontSize'] = '30px';         // 提示框字体
+      live2d_settings['waifuEdgeSide'] = 'right:30';     // 看板娘贴边方向
+      live2d_settings['waifuToolFont'] = '36px';         // 工具栏字体
+      live2d_settings['waifuToolLine'] = '50px';         // 工具栏行高
+      live2d_settings['waifuToolTop'] = '-60px';         // 工具栏顶部边距
+      live2d_settings['waifuDraggable'] = 'axis-x';      // 拖拽样式
+
+      /* 内置 waifu-tips.json */
+      initModel("http://upload-tdy-images.oss-us-west-1.aliyuncs.com/demo-doc/waifu-tips.json")
+  </script>
+
 </body>
 <style>
     .live2d{
